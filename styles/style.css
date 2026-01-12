@@ -1,0 +1,237 @@
+/* Início configurações globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap");
+
+:root {
+    /* Cores genéricas */
+    --cor-azul-principal: #0d698b;
+    --cor-verde-destaque: #22c58b;
+    --cor-cinza-texto: #343434;
+    --cor-branco: #ffffff;
+    --cor-fundo-claro: #f9f9f9;
+
+    /* Variáveis */
+    --cor-titulos: var(--cor-azul-principal);
+    --cor-texto-padrao: var(--cor-cinza-texto);
+    --cor-botoes-cta: var(--cor-verde-destaque);
+    --cor-botoes-cta-secundario: var(--cor-branco);
+    --cor-links-hover: var(--cor-verde-destaque);
+
+    /* Gradientes */
+    --gradiente-principal: linear-gradient(90deg,
+            var(--cor-azul-principal),
+            var(--cor-verde-destaque));
+
+    /* Fontes */
+    --fonte-principal: "Noto Sans", sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-claro);
+    font-family: var(--fonte-principal);
+}
+
+/* Fim configurações globais */
+
+/* Início configurações do header */
+
+#main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.logo-img {
+    width: 130px;
+    height: auto;
+}
+
+.nav-container {
+    display: none;
+}
+
+.hamburger-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--cor-cinza-texto);
+    margin: 4px 0;
+}
+
+.nav-container.active {
+    display: block;
+        /* Faz o menu aparecer */
+        position: absolute;
+        top: 100%;
+        /* Começa exatamente onde o header termina */
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-branco);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        /* Garante que o menu fique na frente de todo o resto */
+}
+
+.nav-container.active .nav-list {
+    list-style: none;
+}
+
+.nav-container .nav-list li a {
+    display: block;
+        /* Faz o link ocupar a linha inteira, facilitando o clique */
+        padding: 15px 25px;
+        color: var(--cor-texto-principal);
+        border-bottom: 1px solid var(--cor-cinza-claro);
+        /* Linha divisória */
+}
+
+/* Fim configurações do header */
+
+/* Hero section - index*/
+
+.hero-section {
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.bg-blur {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bg-blur::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(249, 249, 249, 0.5), rgba(249, 249, 249, 0.5)), url(/assets/images/index/hero-p.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--cor-titulos);
+}
+
+.title-highlight {
+    color: var(--cor-verde-destaque);
+}
+
+.hero-text, .text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-texto-padrao);
+}
+
+.hero-text {
+    margin: 40px 0 30px 0;
+}
+
+.hero-btn {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--cor-titulos);
+    background-color: transparent;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid var(--cor-titulos);
+    border-radius: 8px;
+}
+
+.hero-btn:hover {
+    color: var(--cor-branco);
+    background-color: var(--cor-botoes-cta);
+    border: 1px solid var(--cor-botes-cta);
+    box-shadow: 0px 0px 20px 5px rgba(34, 197, 139, 0.4);
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Fim do hero - index */
+
+/* Início seções */
+
+.about-section, .services-section, .cta-section, .history-section, .testimonials-section { 
+    width: 100%;
+    padding: 60px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--cor-titulos);
+    text-transform: uppercase;
+}
+
+.text {
+    color: var(--cor-texto-padrao);
+    font-weight: 400;
+}
+
+/* Fim seções */
+
+/* Início icon-card */
+
+.icon-card {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-card svg {
+    margin-bottom: 30px;
+}
+
+.icon-card-title {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--cor-verde-destaque);
+    margin-bottom: 20px;
+}
+
+
+
+
+.icon-card-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 15px;
+    fill: var(--cor-verde-destaque);
+}

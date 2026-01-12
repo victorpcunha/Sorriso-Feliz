@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Sorriso Feliz</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <header id="main-header"></header>
+
+    <main>
+        <section class="hero-section">
+            <h1 class="hero-title">Entre em contato conosco</h1>
+            <p class="text">Estamos aqui para ajudar você. Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
+
+            <form>
+                <div class="label-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>          
+                </div>
+
+                <div>
+                    <label class="label-input" for="contato">WhatsApp</label>
+                    <input type="tel" id="contato" name="_1" placeholder="Seu número com DDD" required>
+                </div>
+
+                <div>
+                    <label for="mensagem">Deixe sua mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Informe o motivo do contato" required minlength="100" maxlength="500"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="contact-info-section">
+            <div class="contact-side">
+                <h2 class="title-section">Nossas Informações de Contato</h2>
+                <div class="contact-info">
+                    <img class="contact-info-icon" src="#" alt="Ícone WhatsApp">
+                    <a class="contact-info-text" href="tel:+5585912345678">(85) 91234-5678</a>
+                </div>
+                <div class="contact-info">
+                    <img class="contact-info-icon" src="#" alt="Ícone Email">
+                    <a class="contact-info-text" href="mailto:contato@sorrisofeliz.com.br">contato@sorrisofeliz.com.br</a>
+                </div>
+                <div class="contact-info">
+                    <img class="contact-info-icon" src="#" alt="Ícone Localização">
+                    <address><a class="contact-info-text" href="#">Rua Dragão do Mar, 81 - Fortaleza - CE</a></address>
+                </div>
+
+                <h2 class="title-section">Horário de Funcionamento</h2>
+                <div class="contact-info">
+                    <img class="contact-info-icon" src="#" alt="Ícone Calendário">
+                    <p class="contact-info-text">Segunda a Sexta: 8h às 17h</p>
+                </div>
+
+                <div class="contact-info">
+                    <img class="contact-info-icon" src="#" alt="Ícone Calendário">
+                    <p class="contact-info-text">Sábado: 8h às 12h</p>
+                </div>
+            </div>
+
+            <div class="map-side">
+                <h2 class="title-section">Nossa Localização</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1234567890123!2d-38.5247!3d-3.7319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74a1234567890%3A0xabcdef1234567890!2sRua%20Drag%C3%A3o%20do%20Mar%2C%2081%20-%20Fortaleza%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1610000000000!5m2!1spt-BR!2sbr" width="30%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="main-footer"></footer>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
