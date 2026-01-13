@@ -12,9 +12,9 @@
     /* Variáveis */
     --cor-titulos: #0d698b;
     --cor-texto-padrao: #343434;
-    --cor-botoes-cta: #22c58b;;
+    --cor-botoes-cta: #22c58b;
     --cor-botoes-cta-secundario: #ffffff;
-    --cor-links-hover: #22c58b;;
+    --cor-links-hover: #22c58b;
     --cor-fundo: #f9f9f9;
 
     /* Gradientes */
@@ -68,16 +68,16 @@ body {
 
 .nav-container.active {
     display: block;
-        /* Faz o menu aparecer */
-        position: absolute;
-        top: 100%;
-        /* Começa exatamente onde o header termina */
-        left: 0;
-        width: 100%;
-        background-color: var(--cor-botoes-cta-secundario);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        /* Garante que o menu fique na frente de todo o resto */
+    /* Faz o menu aparecer */
+    position: absolute;
+    top: 100%;
+    /* Começa exatamente onde o header termina */
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-botoes-cta-secundario);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Garante que o menu fique na frente de todo o resto */
 }
 
 .nav-container.active .nav-list {
@@ -86,11 +86,11 @@ body {
 
 .nav-container .nav-list li a {
     display: block;
-        /* Faz o link ocupar a linha inteira, facilitando o clique */
-        padding: 15px 25px;
-        color: var(--cor-titulos);
-        border-bottom: 1px solid var(--cor-texto-padrao);
-        /* Linha divisória */
+    /* Faz o link ocupar a linha inteira, facilitando o clique */
+    padding: 15px 25px;
+    color: var(--cor-titulos);
+    border-bottom: 1px solid var(--cor-texto-padrao);
+    /* Linha divisória */
 }
 
 /* Fim configurações do header */
@@ -141,7 +141,8 @@ body {
     color: var(--cor-botoes-cta);
 }
 
-.hero-text, .text {
+.hero-text,
+.text {
     font-weight: 400;
     color: var(--cor-texto-padrao);
 }
@@ -151,7 +152,8 @@ body {
     margin: 40px 0 30px 0;
 }
 
-.hero-btn, .history-btn {
+.hero-btn,
+.history-btn {
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -163,18 +165,25 @@ body {
     border-radius: 8px;
 }
 
-.hero-btn:hover, .services-card-btn:hover, .history-btn:hover {
+.hero-btn:hover,
+.services-card-btn:hover,
+.history-btn:hover {
     color: var(--cor-botoes-cta-secundario);
     background-color: var(--cor-botoes-cta);
     border: 1px solid var(--cor-botes-cta);
     box-shadow: 0px 0px 20px 5px rgba(34, 197, 139, 0.4);
     transition: background-color 0.3s, color 0.3s;
 }
+
 /* Fim do hero - index */
 
 /* Início seções */
 
-.about-section, .services-section, .cta-section, .history-section, .testimonials-section { 
+.about-section,
+.services-section,
+.cta-section,
+.history-section,
+.testimonials-section {
     width: 100%;
     padding: 60px 20px;
     text-align: left;
@@ -200,7 +209,8 @@ body {
 
 /* Início icon-card */
 
-.icon-card, .services-card {
+.icon-card,
+.services-card {
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -276,6 +286,7 @@ body {
     color: var(--cor-titulos);
     background-color: var(--cor-botoes-cta-secundario);
     box-shadow: 0px 0px 20px 5px var(--cor-botoes-cta-secundario);
+    transition: 0.3s;
 }
 
 .history-img-container {
@@ -299,5 +310,66 @@ body {
 }
 
 .history-btn {
-    align-self: flex-start;
+    align-self: center;
+}
+
+/* Testimonials */
+
+.testimonial-card {
+    margin-bottom: 40px;
+}
+
+.testimonial-avatar-name { /* container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgba(13, 105, 139, 0.5);
+    margin: 0 10px;
+}
+
+.testimonial-card-name {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cor-titulos);
+}
+
+/* Carrossel - Swiper JS */
+
+.swiper {
+    max-width: 335px;
+    min-height: 300px;
+    --swiper-navigation-color: var(--cor-links-hover);
+    --swiper-pagination-color: var(--cor-links-hover);
+    --swiper-navigation-size: 0;
+}
+
+.swiper-button-next {
+    color: var(--cor-botoes-cta);
+}
+
+
+/* Footer */
+
+#main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+}
+
+.logo-container {
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.footer-icon {
+    width: 20px;
 }

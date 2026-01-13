@@ -33,3 +33,30 @@ const setupHamburgerMenu = () => {
 };
 
 setTimeout(setupHamburgerMenu, 2000);
+
+
+// --- LÓGICA DO CARROSSEL SWIPER ---
+// Este código inicializa o Swiper no elemento com a classe .mySwiper
+var swiper = new Swiper(".mySwiper", {
+  // Efeitos e opções
+  effect: "coverflow", // Efeito legal de cartas
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto", // Mostra quantos slides couberem na tela
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  // Navegação
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // Paginação (as bolinhas)
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
