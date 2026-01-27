@@ -1,0 +1,40 @@
+.swiper {
+    max-width: 280px;
+    min-height: 300px;
+    --swiper-navigation-color: var(--cor-links-hover);
+    --swiper-pagination-color: var(--cor-links-hover);
+    --swiper-navigation-size: 0;
+}
+
+.swiper-button-next {
+    color: var(--cor-links-hover);
+}
+
+@media (min-width: 768px) {
+
+    .swiper {
+        max-width: 500px;
+        --swiper-navigation-size: 20px;
+    }
+
+    .testimonial-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial-card p {
+        width: 400px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .swiper {
+        max-width: 700px;
+        --swiper-navigation-size: 40px;
+    }
+
+    .testimonial-card p {
+        width: 600px;
+    }
+}

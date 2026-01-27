@@ -1,0 +1,99 @@
+.icon-card,
+.services-card {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-card-icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.icon-card-title,
+.services-card-title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--cor-botoes-cta);
+    margin-bottom: 20px;
+}
+
+.services-card {
+    min-height: 300px;
+    padding: 30px 10px 10px 10px;
+    margin: 30px 0;
+    border: 1px solid var(--cor-botoes-cta);
+    border-radius: 16px;
+}
+
+.services-card-btn {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--cor-titulos);
+    border: 1px solid var(--cor-titulos);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 30px 0;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+    /* Card de icones */
+    .icon-card,
+    .services-card {
+        min-height: 250px;
+        max-width: 500px;
+        align-self: center;
+    }
+
+    /* texto dentro dos cards de icones */
+
+    .icon-card p,
+    .services-card p {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    /* Icon-cards */
+
+    .icon-card-container,
+    .service-card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon-card,
+    .services-card {
+        max-width: 420px;
+    }
+
+    .services-card {
+        max-width: 400px;
+        margin: 40px auto;
+    }
+
+    .icon-card-title,
+    .services-card-title {
+        font-size: 1.6rem;
+    }
+
+    .icon-card p,
+    .services-card p {
+        width: 90%;
+    }
+}

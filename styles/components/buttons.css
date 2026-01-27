@@ -1,0 +1,103 @@
+/* Botões */
+
+.hero-btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.hero-btn,
+.history-btn {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--cor-titulos);
+    background-color: transparent;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid var(--cor-titulos);
+    border-radius: 8px;
+}
+
+.hero-btn:hover,
+.services-card-btn:hover,
+.history-btn:hover {
+    color: var(--cor-botoes-cta-secundario);
+    background-color: var(--cor-links-hover);
+    border: 1px solid var(--cor-botes-cta);
+    box-shadow: 0px 0px 20px 5px rgba(34, 197, 139, 0.4);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.services-card-btn {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--cor-titulos);
+    border: 1px solid var(--cor-titulos);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 30px 0;
+}
+
+.cta-section-btn {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor-botoes-cta-secundario);
+    border: 1px solid var(--cor-botoes-cta-secundario);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.cta-section-btn:hover {
+    color: var(--cor-titulos);
+    background-color: var(--cor-botoes-cta-secundario);
+    box-shadow: 0px 0px 20px 5px var(--cor-botoes-cta-secundario);
+    transition: 0.3s;
+}
+
+/* MEDIA QUERIE */
+
+@media (min-width: 768px) {
+
+    .hero-btn-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .hero-btn {
+        width: 46%;
+        font-size: 1rem;
+    }
+
+    .history-btn {
+        align-self: center;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .hero-btn,
+    .history-btn {
+        font-size: 1.3rem;
+    }
+
+    .cta-section-btn {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    .history-btn {
+        width: 60%;
+    }
+
+}

@@ -1,0 +1,24 @@
+.img-services-card {
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid var(--cor-links-hover);
+    box-shadow: 0px 0px 20px 1px #22c58c85;
+    margin-bottom: 30px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+
+    .services-cards-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .services-cards-section .title-section {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap");
+
+:root {
+    /* Variáveis */
+    --cor-titulos: #0d698b;
+    --cor-texto-padrao: #343434;
+    --cor-botoes-cta: #22c58b;
+    --cor-botoes-cta-secundario: #ffffff;
+    --cor-links-hover: #22c58b;
+    --cor-fundo: #f9f9f9;
+
+    /* Gradientes */
+    --gradiente-principal: linear-gradient(90deg,
+            var(--cor-titulos),
+            var(--cor-botoes-cta));
+
+    /* Fontes */
+    --fonte-principal: "Noto Sans", sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+}

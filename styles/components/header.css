@@ -1,0 +1,104 @@
+#main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.logo-img {
+    width: 130px;
+    height: auto;
+}
+
+.nav-container {
+    display: none;
+}
+
+.hamburger-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--cor-texto-padrao);
+    margin: 4px 0;
+}
+
+.nav-container.active {
+    display: block;
+    /* Faz o menu aparecer */
+    position: absolute;
+    top: 100%;
+    /* Começa exatamente onde o header termina */
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-botoes-cta-secundario);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Garante que o menu fique na frente de todo o resto */
+}
+
+.nav-container.active .nav-list {
+    list-style: none;
+}
+
+.nav-container .nav-list li a {
+    display: block;
+    /* Faz o link ocupar a linha inteira, facilitando o clique */
+    padding: 15px 25px;
+    color: var(--cor-titulos);
+    border-bottom: 1px solid var(--cor-texto-padrao);
+    /* Linha divisória */
+}
+
+@media (min-width: 768px) {
+
+    /* Início Header */
+    #main-header {
+        padding: 30px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Header */
+    #main-header {
+        padding: 50px 80px;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .nav-container {
+        display: block;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .nav-container .nav-list li a {
+        text-decoration: none;
+        color: var(--cor-titulos);
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav-container .nav-list li a:hover {
+        color: var(--cor-links-hover);
+        border-bottom: 2px solid var(--cor-links-hover);
+        transition: .3s;
+    }
+
+}
+
+/* Fim configurações do header */
