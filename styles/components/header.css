@@ -71,6 +71,10 @@
         padding: 50px 80px;
     }
 
+    #main-header .logo-img {
+        width: 180px;
+    }
+
     .hamburger-btn {
         display: none;
     }

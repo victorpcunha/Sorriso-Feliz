@@ -23,6 +23,10 @@
     margin-bottom: 20px;
 }
 
+.text-card {
+    line-height: 25px;
+}
+
 .services-card {
     min-height: 300px;
     padding: 30px 10px 10px 10px;
@@ -48,6 +52,13 @@
 
 @media (min-width: 768px) {
 
+    /* Container icon-card */
+    .icon-card-container,
+    .service-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* Card de icones */
     .icon-card,
     .services-card {
@@ -67,7 +78,7 @@
 
 @media (min-width: 1024px) {
 
-    /* Icon-cards */
+    /* Icon-card container */
 
     .icon-card-container,
     .service-card-container {
@@ -77,19 +88,34 @@
         justify-content: center;
     }
 
-    .icon-card,
-    .services-card {
+    .icon-card {
         max-width: 420px;
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .services-card {
         max-width: 400px;
         margin: 40px auto;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .icon-card-icon {
+        width: 80px;
     }
 
     .icon-card-title,
     .services-card-title {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+    }
+
+    .text-card {
+        font-size: 1.2rem;
     }
 
     .icon-card p,

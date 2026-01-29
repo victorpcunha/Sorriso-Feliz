@@ -7,8 +7,7 @@
     margin-top: 40px;
 }
 
-.hero-btn,
-.history-btn {
+.hero-btn {
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -23,8 +22,7 @@
 }
 
 .hero-btn:hover,
-.services-card-btn:hover,
-.history-btn:hover {
+.services-card-btn:hover {
     color: var(--cor-botoes-cta-secundario);
     background-color: var(--cor-links-hover);
     border: 1px solid var(--cor-botes-cta);
